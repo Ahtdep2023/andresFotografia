@@ -1,3 +1,4 @@
+/* esto sirve para achicar el alto de la navbar*/
 const nav = document.querySelector(".navegador")
 window.addEventListener("scroll", fixNav)
 

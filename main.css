@@ -12,6 +12,7 @@ header{
     position: sticky;
     top: 15px; 
     z-index: 1;
+   
 }
 .navegador.active{
     display: flex;
