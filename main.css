@@ -27,7 +27,9 @@ header{
 
 .estiloNav{
     display: flex;
-    max-height: 250px;   
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 250px;
 }
 li{
     margin: 30px;
@@ -60,6 +62,7 @@ a{
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-content:center;
     justify-content:center; 
     align-items: center;
@@ -92,6 +95,7 @@ a{
     margin: 5px;
     padding: 10px 5px 5px 10px;
     background-color: #ffdb8ecc;
+    width: 100%;
 }    
 .principales a{
     text-decoration: none;
@@ -338,6 +342,7 @@ a{
     margin: 5px;
     padding: 10px 5px 5px 10px;
     background-color: #ffdb8ecc;
+    width: 100%;
 }
 .PrincipalesDos a{
     text-decoration: none;
@@ -662,7 +667,6 @@ button{
 
 .piecito{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: center;
@@ -674,7 +678,7 @@ button{
     font-weight: bold;
     margin-left: 20px;
     margin-top: 25px;
-    margin-right: 700px;
+    margin-right: 60px;
 }
 .piecito img{
     width: 33px;
@@ -725,6 +729,7 @@ button{
 /* aca empieza whatsapp*/
 
 .iconoWhatsapp{
+    display: flex;
     width: 50px;
     height: 50px;
     border: solid;
@@ -753,5 +758,63 @@ button{
 }
 /*** aprender como conectar el submit del formulario con el mail -    
 
+/* MEDIAS QUERY*/
 
+/* MEDIA DE 575 PX*/
+@media (max-width: 575px) {
+    .principales{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
+    }
+    header{
+        margin: 25px 0px 25px 0px;
+        background-color: #02a791cc;
+        width: 100%;
+        height: 180px; 
+        position: sticky;
+        top: 15px; 
+        z-index: 1;
+       
+    }
+}
+@media (max-width: 575px) {
+    .PrincipalesDos{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media (max-width: 575px) {
+    div.card{
+        align-items: center;
+        width: 100%;
+    }
+    .estiloCurso img{
+        margin-right: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .navegador img {
+        margin-right: 598px;
+        height: 160px;
+        
+    }
+}
+@media (max-width: 575px) {
+    .wpp{
+        display: none;
+        position: fixed;
+        bottom: 90px;
+        left: 20px;
+        width: 50px;
+    } 
+}
+@media (max-width: 575px){
+     .navegador img{
+    padding-top: 33px;
+    margin-right: 189px;
+    height: 205px;
+}
+}
