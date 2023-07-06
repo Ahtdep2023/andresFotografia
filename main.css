@@ -28,7 +28,6 @@ header{
 .estiloNav{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     max-height: 250px;
 }
 li{
@@ -89,17 +88,21 @@ a{
 }
 /*** ACA COMIENZA EL ESTILO DE LAS CARDS PRINCIPALES***/
 
-.principales{
+.principales,
+.PrincipalesDos{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 5px;
     padding: 10px 5px 5px 10px;
     background-color: #ffdb8ecc;
     width: 100%;
 }    
-.principales a{
+.principales a,
+.PrincipalesDos a{
     text-decoration: none;
     color: rgb(81, 82, 88);
+    
 }
 
 /*** comienza la tarjeta de rocio ***/
@@ -107,7 +110,8 @@ a{
 .rochi{
     display: flex;
     flex-wrap: wrap;
-    background-color: #d66c162d;    
+    background-color: #d66c162d; 
+       
 }
 .rochi img{
     margin: 20px 20px 20px 30px;
@@ -157,6 +161,7 @@ a{
     box-sizing: content-box;
     align-content: baseline;
     font-size: 15px;
+    margin-top: 10px;
     padding: 5px;
     height: fit-content;
 }
@@ -195,11 +200,14 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 10px
 }
 .imagenChiquis img{
-    margin-top: 30px;
-    margin-left: 20px;
     height: 90vh;
+}
+.imagenChiquis a img{
+    height: 20px;
+    width: 20px;     
 }
 .imagenChiquis a {
     display: flex;
@@ -335,19 +343,6 @@ a{
 }
 
 /*** SEGUNDA LINEA DE ESTILO DE CARDS***/
-
-.PrincipalesDos{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
-    padding: 10px 5px 5px 10px;
-    background-color: #ffdb8ecc;
-    width: 100%;
-}
-.PrincipalesDos a{
-    text-decoration: none;
-    color: #515258;
-}
 
 /*** aca comienza la tarjeta de las modelos***/
 
@@ -516,7 +511,7 @@ a{
     color: #fff;
     font-size: 30px;
     text-decoration: none;
-    margin: 0px 10px;
+    margin: 5px 10px;
     box-sizing: content-box;
     align-content: baseline;
     font-size: 15px;
@@ -553,16 +548,20 @@ a{
 }
 .imagenEfectos{
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
 }
 .imagenEfectos img{
-    margin-top: 30px;
-    margin-left: 20px;
     height: 90vh;
+}
+.imagenEfectos a img{
+    height: 20px;
+    width: 20px;
+    
 }
 .imagenEfectos a {
     display: flex;
@@ -639,7 +638,7 @@ a{
 button{
     width: 80px;
 }
-/*** BOTON PARA VOLVER DE LAS FOTOS AL INICIO***/
+/*** BOTON PARA VOLVER E IR AL INICIO***/
 .botonInicio{
     position: fixed;
     top: 20px;
@@ -652,7 +651,8 @@ button{
     border-radius: 70px;
     z-index: 2;
 }
-.botonInicio:hover{
+.botonInicio:hover,
+.botonRegreso:hover{
     color: black;
     background-color: aliceblue;
     border-radius: 22px;
@@ -661,6 +661,15 @@ button{
 }
 .boton{
     text-decoration: none;
+}
+.botonRegreso{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: #5d5f66c5;
+    border: solid #3f3c3c93;
+    border-radius: 70px;
+    z-index: 2;
 }
 
 /*** ACA EMPIEZA EL ESTILO PARA TODO LO REFERIDO A FOOTER***/
@@ -760,14 +769,59 @@ button{
 
 /* MEDIAS QUERY*/
 
-/* MEDIA DE 575 PX*/
+         /* MEDIA DE 1200 PX*/   
+       
+ @media (max-width: 1200px) {
+        .principales{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .PrincipalesDos{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+}
+        /* MEDIA DE 992 PX*/
+
+@media (max-width: 992px) {
+
+    .navegador ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 452px;
+    }
+
+        .principales{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .PrincipalesDos{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+       
+}
+
+        /* MEDIA DE 575 PX*/
+
 @media (max-width: 575px) {
     .principales{
         flex-direction: column;
         align-items: center;
         width: 100%;
-
-    }
+        }
+   
     header{
         margin: 25px 0px 25px 0px;
         background-color: #02a791cc;
@@ -775,46 +829,48 @@ button{
         height: 180px; 
         position: sticky;
         top: 15px; 
-        z-index: 1;
-       
-    }
-}
-@media (max-width: 575px) {
+        z-index: 1;  
+        }
+
     .PrincipalesDos{
         flex-direction: column;
         align-items: center;
         width: 100%;
-    }
-}
-@media (max-width: 575px) {
+        }
+
     div.card{
         align-items: center;
         width: 100%;
-    }
+        }
+
     .estiloCurso img{
         margin-right: 30px;
-    }
-}
-@media (max-width: 575px) {
+        }
+
     .navegador img {
         margin-right: 598px;
         height: 160px;
-        
-    }
-}
-@media (max-width: 575px) {
+        }
+
     .wpp{
         display: none;
         position: fixed;
         bottom: 90px;
         left: 20px;
         width: 50px;
-    } 
-}
-@media (max-width: 575px){
+        }
+
      .navegador img{
-    padding-top: 33px;
-    margin-right: 189px;
-    height: 205px;
+        padding-top: 33px;
+        margin-right: 189px;
+        height: 205px;
+        }
 }
+ /* MEDIA DE 768 PX*/
+ 
+@media (max-width 768px){
+    .liEstilo {
+        display: flex;
+        width: 262px;
+        }
 }
