@@ -27,8 +27,7 @@ header{
 
 .estiloNav{
     display: flex;
-    flex-wrap: wrap;
-    max-height: 250px;
+    max-height: 250px;   
 }
 li{
     margin: 30px;
@@ -343,6 +342,18 @@ a{
 }
 
 /*** SEGUNDA LINEA DE ESTILO DE CARDS***/
+
+.PrincipalesDos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 10px 5px 5px 10px;
+    background-color: #ffdb8ecc;
+}
+.PrincipalesDos a{
+    text-decoration: none;
+    color: #515258;
+}
 
 /*** aca comienza la tarjeta de las modelos***/
 
@@ -767,7 +778,6 @@ button{
 }
 /*** aprender como conectar el submit del formulario con el mail -    
 
-/* MEDIAS QUERY*/
 
          /* MEDIA DE 1200 PX*/   
        
@@ -784,93 +794,3 @@ button{
         }
 }
         /* MEDIA DE 992 PX*/
-
-@media (max-width: 992px) {
-
-    .navegador ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        width: 452px;
-    }
-
-        .principales{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        .PrincipalesDos{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        
-       
-}
-
-        /* MEDIA DE 575 PX*/
-
-@media (max-width: 575px) {
-    .principales{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        }
-   
-    header{
-        margin: 25px 0px 25px 0px;
-        background-color: #02a791cc;
-        width: 100%;
-        height: 180px; 
-        position: sticky;
-        top: 15px; 
-        z-index: 1;  
-        }
-
-    .PrincipalesDos{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        }
-
-    div.card{
-        align-items: center;
-        width: 100%;
-        }
-
-    .estiloCurso img{
-        margin-right: 30px;
-        }
-
-    .navegador img {
-        margin-right: 598px;
-        height: 160px;
-        }
-
-    .wpp{
-        display: none;
-        position: fixed;
-        bottom: 90px;
-        left: 20px;
-        width: 50px;
-        }
-
-     .navegador img{
-        padding-top: 33px;
-        margin-right: 189px;
-        height: 205px;
-        }
-}
- /* MEDIA DE 768 PX*/
- 
-@media (max-width 768px){
-    .liEstilo {
-        display: flex;
-        width: 262px;
-        }
-}
