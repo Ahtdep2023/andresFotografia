@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
     margin: 25px 0px 25px 0px;
     background-color: #02a791cc;
@@ -12,8 +13,8 @@ header{
     position: sticky;
     top: 15px; 
     z-index: 1;
-   
 }
+
 .navegador.active{
     display: flex;
     flex-wrap: wrap;
@@ -29,9 +30,11 @@ header{
     display: flex;
     max-height: 250px;   
 }
+
 li{
     margin: 30px;
 }
+
 a{
     display: flex;
     flex-wrap: wrap;
@@ -39,15 +42,18 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 .liEstilo{
     display: flex;
     width: 280px;
     margin-right: 170px;
     margin-left: 170px;
 }
+
 .logoPrincipal{
     padding-left: 40px;
 }
+
 .enlaceLogo{
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +62,7 @@ a{
     align-items: center;
     min-width: 300px;
 }
+
 .navegador ul{
     list-style: none;
     display: flex;
@@ -66,6 +73,7 @@ a{
     align-items: center;
     height: 80px;  
 }
+
 .navegador a{
     font-family: 'EB Garamond', serif;
     font-weight: 700;
@@ -73,18 +81,20 @@ a{
     color: #fefffe; 
     text-decoration: none;
 }
+
 .navegador img{
     margin-right: 60px;
     height: 250px;   
 }
+
 .estiloUl a:hover{
     color: black;
     background-color: aliceblue;
     border-radius: 22px;
     text-decoration: none;
-    transition: .9s;
-    
+    transition: .9s;    
 }
+
 /*** ACA COMIENZA EL ESTILO DE LAS CARDS PRINCIPALES***/
 
 .principales,
@@ -96,31 +106,50 @@ a{
     padding: 10px 5px 5px 10px;
     background-color: #ffdb8ecc;
     width: 100%;
-}    
+}
+
 .principales a,
 .PrincipalesDos a{
     text-decoration: none;
-    color: rgb(81, 82, 88);
-    
+    color: #515258;   
 }
 
-/*** comienza la tarjeta de rocio ***/
+/* TARJETAS BOOSTRAP*/
 
-.rochi{
+.rochi,
+.chiquis,
+.peluquita,
+.deport,
+.model,
+.carito,
+.urbano,
+.efectos{
     display: flex;
-    flex-wrap: wrap;
-    background-color: #d66c162d; 
-       
+    flex-wrap: wrap;       
 }
-.rochi img{
+
+/* IMAGENES DE LAS TARJETAS VERTICALES*/
+
+.rochi img,
+.deport img,
+.model img,
+.carito img,
+.urbano img{
     margin: 20px 20px 20px 30px;
     width: 390px;
     height: 540px;
     border-radius: 10px;
 }
-.rochi img:hover{
+
+/* EFECTOS SOBRE IMAGENES DE LAS CARDS VERTICALES*/
+.rochi img:hover,
+.deport img:hover,
+.model img:hover,
+.carito img:hover,
+.urbano img:hover{
     opacity: 0.7;
 }
+
 .modalRochi:target{
     display: flex;
     flex-direction: column;
@@ -131,9 +160,11 @@ a{
     width: 100%;
     height: 100vh;
 }
+
 .modalRochi{
     display: none;
 }
+
 .imagenRocio{
     display: flex;
     width: 100%;
@@ -142,10 +173,12 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .imagenRocio img{
     margin: 0;
     width: 70vh;
 }
+
 .imagenRocio a {
     display: flex;
     color: #fff;
@@ -164,21 +197,23 @@ a{
     padding: 5px;
     height: fit-content;
 }
-/*** comineza la tarjeta de infantiles***/
-.chiquis{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ebe70d41;
-}
-.chiquis img{
+
+/* IMAGENES DE LAS TARJETAS HORIZONTALES*/
+
+.chiquis img,
+.peluquita img,
+.efectos img{
     margin: 20px 20px 40px 75px;
     width: 540px;
     height: 370px;
     border-radius: 10px;
+    
 }
+
 .chiquis img:hover{
     opacity: 0.7;
 }
+
 .modalChiquis:target{
     display: flex;
     flex-direction: column;
@@ -188,10 +223,13 @@ a{
     left: 0;
     width: 100%;
     height: 100vh;
+    
 }
+
 .modalChiquis{
     display: none;
 }
+
 .imagenChiquis{
     display: flex;
     width: 100%;
@@ -201,13 +239,16 @@ a{
     justify-content: center;
     margin-top: 10px
 }
+
 .imagenChiquis img{
     height: 90vh;
 }
+
 .imagenChiquis a img{
     height: 20px;
     width: 20px;     
 }
+
 .imagenChiquis a {
     display: flex;
     color: #fff;
@@ -225,47 +266,42 @@ a{
     padding: 5px;
     height: fit-content;
 }
+
 /*** aca comienza la tarjeta de la pelu***/
-.peluquita{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fc4cb934;
-}
-.peluquita img{
-    margin: 20px 20px 40px 75px;
-    width: 540px;
-    height: 370px;
-    border-radius: 10px;
-}
+
 .peluquita img:hover{
     opacity: 0.7;
 }
+
 .modalPeluquita:target{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
+    
 }
+
 .modalPeluquita{
     display: none;
 }
-.imagenPeluquita{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
+
 .imagenPeluquita img{
-    margin-top: 30px;
-    margin-left: 20px;
     height: 90vh;
 }
+
+.imagenPeluquita a img{
+    height: 20px;
+    width: 20px;
+    top: 0;
+}
+
 .imagenPeluquita a {
     display: flex;
     color: #fff;
@@ -283,21 +319,9 @@ a{
     padding: 5px;
     height: fit-content;
 }
+
 /*** aca comienza la tarjeta de Deporte***/
-.deport{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #08c2274b;    
-}
-.deport img{
-    margin: 20px 20px 20px 30px;
-    width: 390px;
-    height: 540px;
-    border-radius: 10px;
-}
-.deport img:hover{
-    opacity: 0.7;
-}
+
 .modalDeport:target{
     display: flex;
     flex-direction: column;
@@ -308,9 +332,11 @@ a{
     width: 100%;
     height: 100vh;
 }
+
 .modalDeport{
     display: none;
 }
+
 .imagenDeporte{
     display: flex;
     width: 100%;
@@ -319,10 +345,12 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .imagenDeporte img{
     margin: 0;
     width: 70vh;
 }
+
 .imagenDeporte a {
     display: flex;
     color: #fff;
@@ -350,6 +378,7 @@ a{
     padding: 10px 5px 5px 10px;
     background-color: #ffdb8ecc;
 }
+
 .PrincipalesDos a{
     text-decoration: none;
     color: #515258;
@@ -357,20 +386,6 @@ a{
 
 /*** aca comienza la tarjeta de las modelos***/
 
-.model{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #c2b6084b;    
-}
-.model img{
-    margin: 20px 20px 20px 30px;
-    width: 390px;
-    height: 540px;
-    border-radius: 10px;
-}
-.model img:hover{
-    opacity: 0.7;
-}
 .modalModel:target{
     display: flex;
     flex-direction: column;
@@ -381,9 +396,11 @@ a{
     width: 100%;
     height: 100vh;
 }
+
 .modalModel{
     display: none;
 }
+
 .imagenModel{
     display: flex;
     width: 100%;
@@ -392,10 +409,12 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .imagenModel img{
     margin: 0;
     width: 70vh;
 }
+
 .imagenModel a {
     display: flex;
     color: #fff;
@@ -415,20 +434,7 @@ a{
 }
 
 /*** aca comienza la tarjeta de carolina***/
-.carito{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #7808c241;    
-}
-.carito img{
-    margin: 20px 20px 20px 30px;
-    width: 390px;
-    height: 540px;
-    border-radius: 10px;
-}
-.carito img:hover{
-    opacity: 0.7;
-}
+
 .modalCarito:target{
     display: flex;
     flex-direction: column;
@@ -439,21 +445,26 @@ a{
     width: 100%;
     height: 100vh;
 }
+
 .modalCarito{
     display: none;
 }
+
 .imagenCarito{
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
 }
+
 .imagenCarito img{
     margin: 0;
     width: 70vh;
 }
+
 .imagenCarito a {
     display: flex;
     color: #fff;
@@ -473,20 +484,7 @@ a{
 }
 
 /*** aca comienza la tarjeta Urbano***/
-.urbano{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #6872792d;    
-}
-.urbano img{
-    margin: 20px 20px 20px 30px;
-    width: 390px;
-    height: 540px;
-    border-radius: 10px;
-}
-.urbano img:hover{
-    opacity: 0.7;
-}
+
 .modalUrbano:target{
     display: flex;
     flex-direction: column;
@@ -497,9 +495,11 @@ a{
     width: 100%;
     height: 100vh;
 }
+
 .modalUrbano{
     display: none;
 }
+
 .imagenUrbano{
     display: flex;
     width: 100%;
@@ -508,10 +508,12 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .imagenUrbano img{
     margin: 0;
     width: 70vh;
 }
+
 .imagenUrbano a {
     display: flex;
     color: #fff;
@@ -529,21 +531,13 @@ a{
     padding: 5px;
     height: fit-content;
 }
+
 /*** aca comienza la tarjeta de Efectos***/
-.efectos{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #1d1c1c56;
-}
-.efectos img{
-    margin: 20px 20px 40px 75px;
-    width: 540px;
-    height: 370px;
-    border-radius: 10px;
-}
+
 .efectos img:hover{
     opacity: 0.7;
 }
+
 .modalEfectos:target{
     display: flex;
     flex-direction: column;
@@ -554,9 +548,7 @@ a{
     width: 100%;
     height: 100vh;
 }
-.modalEfectos{
-    display: none;
-}
+
 .imagenEfectos{
     display: flex;
     flex-direction: row;
@@ -566,14 +558,17 @@ a{
     height: 100%;
     margin-top: 10px;
 }
+
 .imagenEfectos img{
     height: 90vh;
 }
+
 .imagenEfectos a img{
     height: 20px;
     width: 20px;
     
 }
+
 .imagenEfectos a {
     display: flex;
     color: #fff;
@@ -591,12 +586,14 @@ a{
     padding: 5px;
     height: fit-content;
 }
+
 .imagenGancia{
     width: 318px;
     height: 477px;
     padding-left: 0px;
     border-radius: 4px;
 }
+
 /*** TARJETA QUE DA ESTILO A MI PERSONA***/
 
 .fotografo{
@@ -616,16 +613,20 @@ a{
     padding-left: 50px;
     padding-top: 15px;
 }
+
 .card-body{
     display: flex;
     flex-direction: column;
 }
+
 .card-title{
     font-weight: bold;
 }
+
 .card p{
     flex-grow: 1;
 }
+
 /*** ESTILO AL FORMULARIO***/
 
 .datosForm form{
@@ -639,17 +640,22 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 .datosForm input{
     width: 30%;
     height: 30px;
 }
+
 .datosForm label{
     font-weight: bold;   
 }
+
 button{
     width: 80px;
 }
+
 /*** BOTON PARA VOLVER E IR AL INICIO***/
+
 .botonInicio{
     position: fixed;
     top: 20px;
@@ -662,6 +668,7 @@ button{
     border-radius: 70px;
     z-index: 2;
 }
+
 .botonInicio:hover,
 .botonRegreso:hover{
     color: black;
@@ -670,9 +677,11 @@ button{
     text-decoration: none;
     transition: .3s;
 }
+
 .boton{
     text-decoration: none;
 }
+
 .botonRegreso{
     width: 20px;
     height: 20px;
@@ -694,18 +703,21 @@ button{
     height: 80px;
     width: 100%;
 }
+
 .piecito p{
     font-weight: bold;
     margin-left: 20px;
     margin-top: 25px;
     margin-right: 60px;
 }
+
 .piecito img{
     width: 33px;
     height: 45px;
     margin-left: 7px;
     padding: 5px;
 }
+
 .estiloContacto{
     min-height: 550px;
     background-color: #c0bdbd;
@@ -728,6 +740,7 @@ button{
     border-radius: 40px;
     transition:.5s
 }
+
 /* aca empieza instagram*/
 
 .iconoInstagram{
@@ -746,6 +759,7 @@ button{
     transition:.5s
     
 }
+
 /* aca empieza whatsapp*/
 
 .iconoWhatsapp{
@@ -762,9 +776,11 @@ button{
     border-radius: 40px;
     transition:.5s
 }
+
 .imagenIconoWtp{
     margin-right: 5px;
 }
+
 .wpp{
     position: fixed;
     bottom: 40px;
@@ -772,25 +788,13 @@ button{
     width: 70px;
     z-index: 2;
 }
+
 .wpp:hover{
     transform: scale(1.3);
     transition: .3s;
 }
+
 /*** aprender como conectar el submit del formulario con el mail -    
 
-
-         /* MEDIA DE 1200 PX*/   
+    /*MEDIA DE 1200 PX*/   
        
- @media (max-width: 1200px) {
-        .principales{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        .PrincipalesDos{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-}
-        /* MEDIA DE 992 PX*/
