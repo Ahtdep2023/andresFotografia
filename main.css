@@ -798,3 +798,128 @@ button{
 
     /*MEDIA DE 1200 PX*/   
        
+@media (max-width: 1200px){
+    .principales, .PrincipalesDos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5px;
+        padding: 10px 5px 5px 10px;
+        background-color: #ffdb8ecc;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .estiloCurso img {
+        display: flex;
+        max-width: 380px;
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    .rochi img, .deport img, .model img, .carito img, .urbano img {
+        margin: 20px 20px 20px 30px;
+        width: 348px;
+        height: 509px;
+        border-radius: 20px;
+    }
+    .chiquis img, .peluquita img, .efectos img {
+        margin: 20px 8px 30px 65px;
+        width: 502px;
+        height: 352px;
+        border-radius: 10px;
+    }
+}
+
+        /*MEDIA DE 992 PX*/  
+
+@media (max-width: 1120px){
+    .liEstilo {
+        display: flex;
+        width: 16px;
+        margin-right: 200px;
+        margin-left: 120px;
+    }
+    
+
+    .estiloCurso img {
+        display: flex;
+        max-width: 380px;
+        padding: 0;
+    }
+    
+.rochi, .chiquis, .peluquita, .deport, .model, .carito, .urbano, .efectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+    .chiquis img, .peluquita img, .efectos img {
+        margin: 20px 0px 30px 17px;
+        width: 420px;
+        height: 295px;
+        border-radius: 10px;
+    }
+}
+
+        /*MEDIA DE 768 PX*/  
+
+ @media (max-width: 768px){
+    .liEstilo {
+        display: flex;
+        width: 16px;
+        margin-right: 180px;
+        margin-left: 5px;
+    }
+            
+        
+    .estiloCurso img {
+        display: flex;
+        max-width: 380px;
+        padding: 0;
+    }
+    .rochi img, .deport img, .model img, .carito img, .urbano img {
+        margin: 20px 20px 20px 30px;
+        width: 333px;
+        height: 489px;
+        border-radius: 20px;
+    }
+}
+
+        /*MEDIA DE 576 PX*/  
+
+@media (max-width: 576px){
+    .liEstilo {
+        display: flex;
+        width: 16px;
+        margin-right: 68px;
+        margin-left: 2px;
+    }
+                    
+                
+    .estiloCurso img {
+        display: flex;
+        max-width: 380px;
+        padding: 0;
+    }
+    .navegador img {
+        margin-right: 130px;
+        height: 180px;
+    }
+    .navegador a {
+        font-family: 'EB Garamond', serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #fefffe;
+        text-decoration: none;
+    }
+    
+    .enlaceLogo {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        min-width: 190px;
+    }
+}
